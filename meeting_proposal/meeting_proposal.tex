@@ -1,0 +1,117 @@
+\documentclass{beamer}
+
+\usetheme{metropolis}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+
+
+%Package and settings to display Latex code
+\usepackage{listings}
+
+\lstset{literate=%
+  {Ö}{{{\color{magenta}\"O}}}1
+  {Ä}{{{\color{magenta}\"A}}}1
+  {Ü}{{{\color{magenta}\"U}}}1
+  {ß}{{{\color{magenta}\ss}}}1
+  {ü}{{{\color{magenta}\"u}}}1
+  {ä}{{{\color{magenta}\"a}}}1
+  {ö}{{{\color{magenta}\"o}}}1
+}
+
+\lstset{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\tt\scriptsize,
+    keywordstyle=\color{blue},
+    identifierstyle=\color{magenta},
+}
+
+
+%Information to be included in the title page:
+\title{Weekly report}
+\author{Christian Kirfel}
+\institute{Physikalisches Institut Bonn}
+\date{2020}
+
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{A meeting structure proposal}
+
+\begin{frame}{Ideas of meetings}
+    \begin{itemize}
+        \item What should be communicated in a meeting?
+        \item What would you like to take away from a meeting?
+        \item How often and when should everybody present?
+        \item Do you feel like you understand most discussions in a meeting?
+        \item Do you feel comfortable presenting your work and asking questions and if not why?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{My answers}
+    \begin{itemize}
+        \item In a meeting a status update should be given and it should be communicated how is working on what and where the difficulties lie.
+        \item I like to be updated on general things and I need the meeting to understand who might need my help.
+        \item I think a presentation should either by very brief and every or every second week or only when one has really new results or questions. I would like a soft obligation to present once a month.
+        \item I now understand almost all discussions. Halfway through my Master a lot of topics were not clear to me. In Zoom meetings I find it harder to listen.
+        \item I feel comfortable presenting, sometimes I dislike speaking for too long when the meeting is already long.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{A suggestion}
+    \begin{itemize}
+        \item Add timeslots to the meeting to allow better planning of the allocated time.
+        \item Add a Jira to improve the planning of tasks and streamline the reports
+        \item Use Jira to have discussions and keep them available
+        \item Maybe use a loose Sprint structure to decide for presentation deadlines
+        \item What do you think?
+    \end{itemize}
+\end{frame}
+
+\section{Early separation for hadhad}
+
+\begin{frame}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width = \textwidth]{}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[width = \textwidth]{}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width = \textwidth]{}
+            \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[width = \textwidth]{}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+
+
+
+\end{document}

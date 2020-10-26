@@ -1,13 +1,49 @@
 \documentclass{beamer}
 
+\usetheme{metropolis}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+
+
+%Package and settings to display Latex code
+\usepackage{listings}
+
+\lstset{literate=%
+  {Ö}{{{\color{magenta}\"O}}}1
+  {Ä}{{{\color{magenta}\"A}}}1
+  {Ü}{{{\color{magenta}\"U}}}1
+  {ß}{{{\color{magenta}\ss}}}1
+  {ü}{{{\color{magenta}\"u}}}1
+  {ä}{{{\color{magenta}\"a}}}1
+  {ö}{{{\color{magenta}\"o}}}1
+}
+
+\lstset{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\tt\scriptsize,
+    keywordstyle=\color{blue},
+    identifierstyle=\color{magenta},
+}
 
 
 %Information to be included in the title page:
-\title{Sample title}
-\author{Anonymous}
-\institute{Overleaf}
-\date{2014}
+\title{Beamer - Präsentationen mit \LaTeX}
+\author{Christian Kirfel}
+\institute{Physikalisches Institut Bonn}
+\date{2020}
 
 
 
@@ -15,20 +51,255 @@
 
 \frame{\titlepage}
 
-\begin{frame}
-\frametitle{Sample frame title}
-This is a text in the first frame. This is a text in the first frame. This is a text in the first frame.
-\end{frame}
 
 \begin{frame}{Was ist eigentlich \LaTeX Beamer?}
+    \begin{center}
+        Beamer ist eine Klasse des Textsatzprogramms LaTeX, mit der Präsentationen erstellt werden können.
+        Beamer wurde von Till Tantau entwickelt und erstmals 2003 auf dem CTAN-Netzwerk veröffentlicht.
+        Seit April 2010 wird das Paket von Vedran Miletić gepflegt. Weiterhin lieferte Joseph Wright Beiträge zu dem Projekt.
+        Der Name der Klasse ist vom verbreiteten deutschen Scheinanglizismus für einen Videoprojektor abgeleitet, der zum Vorführen einer Präsentation verwendet wird.
+    \end{center}
 \end{frame}
 
-\begin{frame}{Warum sollte man Latex Beamer nutzen?}
-
+\begin{frame}{Warum sollte man \LaTeX Beamer nutzen?}
+\begin{block}{Vorteile}
+    \begin{itemize}
+        \item alle Vorteile von \LaTeX
+            \begin{itemize}
+                \item Konsistente Handhabung von Referenzen und Zitaten
+                \item Trennung von Inhalt und Formattierung 
+                \item Einfache Formatierung von mathematischen Formeln und Symbolen
+            \end{itemize}
+        \item leichte Wiederverwandbarkeit von alten Präsentationen
+        \item automatische Folienaufteilung
+        \item Verwendung von Formeln und Text direkt auf \LaTeX Dokumenten
+    \end{itemize}
+\end{block}
+\begin{block}{Nachteile}
+    \begin{itemize}
+        \item Ineffizient für schnelle Arbeiten
+        \item Mühsam bei der genauen Anordnung von Elementen
+    \end{itemize}
+\end{block}
 \end{frame}
 
-\begin{frame}{Warum sollte man Latex Beamer nutzen?}
+% Setting up the Beamer package
 
+\begin{frame}[containsverbatim]{Der Beginn eines \LaTeX Beamer Projektes}
+\begin{lstlisting}
+    \documentclass{beamer}
+
+    \usepackage[utf8]{inputenc}
+
+    \begin{document}
+\end{lstlisting}
 \end{frame}
+
+% Eine einfache Folie
+
+\begin{frame}[containsverbatim]{test}
+\begin{lstlisting}
+\begin{frame}{Titel der Folie}
+    \begin{center}
+    \Huge EingroßeszentriertesWort
+    \end{center}
+\end{frame}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Titel der Folie}
+    \begin{center}
+    \Huge EingroßeszentriertesWort
+    \end{center}
+\end{frame}
+
+% Die Titel Folie
+
+\begin{frame}[containsverbatim, fragile]{Die Titel Folie}
+\begin{lstlisting}
+    \begin{document}
+
+    \usetheme{metropolis}
+
+    \title{Beamer - Präsentationen mit \LaTeX}
+    \author{Christian Kirfel}
+    \institute{Physikalisches Institut Bonn}
+    \date{2020}
+
+    \frame{\titlepage}
+\end{lstlisting}
+\end{frame}
+
+\frame{\titlepage}
+
+%Some tips and tricks
+
+\begin{frame}[containsverbatim]{Bilder und Grafiken}
+\begin{itemize}
+    \item die figure Umgebung kann in frames verwendet werden.
+\end{itemize}
+\begin{lstlisting}
+\begin{frame}{Titel der Folie}
+    \begin{figure}
+    \includegraphics[widht = \textwidth]{test.png}
+    \caption{}
+    \label{}
+    \end{figure}
+\end{frame}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]{Eine Folie aufteilen - 1}
+\begin{itemize}
+    \item Eine Möglichkeit ist die Nutzung von columns
+\end{itemize}
+\begin{lstlisting}
+\begin{frame}{Titel der Folie}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]{Eine Folie aufteilen - 2}
+\begin{itemize}
+    \item Alternativ kann man eine tabular Umgebung nutzen
+\end{itemize}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{lstlisting}[basicstyle=\fontsize{8}{9}\selectfont]
+        \begin{tabular}{p{5cm}|p{5cm}}
+        \begin{figure}
+            \includegraphics[scale = 0.09]{brain}
+        \end{figure}
+        & 
+        \begin{figure}
+            \includegraphics[scale = 1.4]{machine}
+        \end{figure} \\
+      \multicolumn{1}{c|}{Humam senses} & \multicolumn{1}{c}{Input variables} \\
+        \begin{itemize}
+            \item Extraction of relevant info
+        \end{itemize}
+        & 
+        \begin{itemize}
+          \item Preprocessed by user
+        \end{itemize} \\
+        \end{lstlisting}
+    \end{column}    
+    \begin{column}{0.5\textwidth}
+        \begin{lstlisting}[basicstyle=\fontsize{8}{9}\selectfont]
+                \multicolumn{1}{c|}{Human brain} & \multicolumn{1}{c}{Net of nodes} \\
+        \begin{itemize}
+            \item Single combination $\rightarrow$ action
+        \end{itemize}
+        & 
+        \begin{itemize}
+          \item Combination forms non-linear model
+        \end{itemize} 
+     \end{tabular}
+    \end{frame}
+        \end{lstlisting}
+    \end{column}    
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Neural Networks - Processing information}
+    \begin{tabular}{p{5cm}|p{5cm}}
+        \begin{figure}
+            \includegraphics[scale = 0.09]{brain}
+        \end{figure}
+        & 
+        \begin{figure}
+            \includegraphics[scale = 1.4]{machine}
+        \end{figure} \\
+      \multicolumn{1}{c|}{Humam senses} & \multicolumn{1}{c}{Input variables} \\
+        \begin{itemize}
+            \item Extraction of relevant info
+            \item Impossible for machines
+        \end{itemize}
+        & 
+        \begin{itemize}
+          \item Preprocessed by user
+          \item {e.g.} kinematic variables
+        \end{itemize} \\
+    \multicolumn{1}{c|}{Human brain} & \multicolumn{1}{c}{Net of nodes} \\
+        \begin{itemize}
+            \item Web of neuron cells
+            \item Input from surrounding cells
+            \item Single combination $\rightarrow$ action
+        \end{itemize}
+        & 
+        \begin{itemize}
+          \item Nodes = simple processors
+          \item Connected by linear function
+          \item Combination forms non-linear model
+        \end{itemize} 
+     \end{tabular}
+    \end{frame}
+
+\begin{frame}[containsverbatim]{Folien aufbauen}
+\begin{lstlisting}
+\begin{frame}{Eine Folie mit Pausen}
+    \begin{itemize}
+        \item Eins \pause
+        \item Zwei \pause
+        \item Drei \pause
+    \end{itemize}
+\end{frame}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Eine Folie mit Pausen}
+    \begin{itemize}
+        \item Eins \pause
+        \item Zwei \pause
+        \item Drei 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[containsverbatim]{Blöcke}
+    \begin{lstlisting}
+    \setbeamertemplate{blocks}[rounded][shadow=true]
+    \begin{frame}{Verschiedene Blöcke}
+        \begin{block}{Ein Block}
+            Text im Block
+        \end{block}
+        \begin{alertblock}{Ein Alert Block}
+            Text im Block
+        \end{alertblock}
+        \begin{definition}
+            $E = mc^2$
+        \end{definition}
+    \end{frame}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}{Verschiedene Blöcke}
+    \setbeamertemplate{blocks}[rounded][shadow=true]
+    \begin{block}{Ein Block}
+        Text im Block
+    \end{block}
+    \begin{alertblock}{Ein Alert Block}
+        Text im Block
+    \end{alertblock}
+    \begin{definition}
+        $E = mc^2$
+    \end{definition}
+\end{frame}
+
+\begin{frame}{Fazit}
+    \begin{itemize}
+        \item Fast alle packages und Möglichkeiten von \LaTeX lassen sich weiter anwenden
+        \item Refs, hyperrefs und bibliography funktinieren wie gehabt
+        \item Für alle Stilelemente gibt es unbegrenzte Möglichkeiten und templates zu testen
+        \item \href{https://www.overleaf.com/learn/latex/Beamer}{Beamer tutorial}
+    \end{itemize}
+\end{frame}
+
 
 \end{document}
