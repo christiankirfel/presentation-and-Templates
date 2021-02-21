@@ -1,21 +1,21 @@
 \begin{frame}{Challenges}
-    \begin{block}{Handling of negative weights}
+    \begin{block}{Negative weights in Monte Carlo}
         \begin{itemize}
-            \item What is the origin of negative3 weights
-            \item How do they affect neural networks
-            \item How should they be handled
+            \item Negative weights arise from
+            \item In neural network training negative weights need to an unwanted behaviour
+            \item The impact of the treatment of negative weights on the training has to be explored
         \end{itemize}
     \end{block}
-    \begin{block}{Weighting of background processes}
+    \begin{block}{Different sizes of background processes}
         \begin{itemize}
             \item Dominating background can diminish the significance of secondary backgrounds in Training
-            \item Adjust the network to handle several levels of background.
+            \item Especially very signal-like backgrounds are likely to be mislabed
         \end{itemize}
     \end{block}
     \begin{block}{Accelerating network optimisation}
         \begin{itemize}
             \item Exploration of new features is only possible in an optimised network
-            \item To minimise the work of constant optimisation
+            \item An evolutionary optimisation approach minimises the work effort
         \end{itemize}
     \end{block}
 \end{frame}
