@@ -1,0 +1,34 @@
+\begin{frame}{Evolutionary neural networks}
+    \begin{itemize}
+        \item Starting with a set of random configurations
+        \vspace{0.2cm}
+        \item Evaluate the results of the first generation and generate a new generation based on 
+        \vspace{0.2cm}
+        \item Repeat until a good configuration is reached
+        \vspace{0.2cm}
+        \item Advantages:
+            \begin{itemize}
+                \item Decrease user bias for hyperparameter choice
+                \item Optimised to run on worker nodes
+                \item Quick discarding of bad configurations
+                \item User friendly for unexperienced students
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Inner product}
+    \begin{equation*}
+        a^{\mu} = \begin{pmatrix}
+            p_T \cosh ( \eta ) \\
+            p_T \cos ( \phi ) \\
+            p_T \sin ( \phi ) \\
+            p_T \sinh ( \eta ) \end{pmatrix}
+    \end{equation*}
+    %
+    \begin{align*}
+        \langle A | B \rangle = A_{\mu} B^{\mu}\\
+        = p_{T,A} p_{T,B} ( \cosh ( \eta_A ) \cosh ( \eta_B ) - \cos ( \phi_A ) \cos ( \phi_B)\\
+        - \sin ( \phi_A ) \sin ( \phi_B ) -\sinh ( \eta_A ) \sinh ( \eta_B ) )\\
+        = p_{T,A} p_{T,B} \left( \cosh ( \eta_A - \eta_B ) - \cos ( \phi_A - \phi_B ) \right)
+    \end{align*}
+\end{frame}

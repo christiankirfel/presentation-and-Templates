@@ -1,0 +1,48 @@
+ * NN Setup * 
+
+ > NN parameters: 
+   >> epochs: 1000
+   >> batch_size: 1000
+   >> loss: binary_crossentropy
+   >> optimizer: cadam
+   >> --lr: 0.01
+   >> --decay: None
+   >> --momentum: 0.0
+   >> --nesterov: True
+   >> metrics: ['acc']
+   >> activations: ['elu', 'elu', 'elu', 'elu', 'sigmoid']
+   >> nHiddenLayers: 3
+   >> nNodes: [180, 180, 180, 180]
+   >> input_dim: 28
+   >> kfold_splits: 1
+   >> dropout: [0.8, 0.8, 0.8, 0.8]
+
+ > NN Features: 
+   >> OSDF_LepHad
+   >> OSSF_LepHad
+   >> OS_LepHad
+   >> OS_ee
+   >> OS_emu
+   >> OS_mue
+   >> OS_mumu
+   >> Reco_tautau_mass_1
+   >> Reco_tautau_mass_2
+   >> Reco_w_Tmass_1
+   >> Reco_w_Tmass_2
+   >> Reco_w_mass_1
+   >> Reco_w_mass_2
+   >> bscore_jet1
+   >> bscore_jet2
+   >> bscore_jet3
+   >> bscore_jet4
+   >> bscore_jet5
+   >> bscore_jet6
+   >> m_met
+   >> vis_tautau_mass
+   >> vis_tautau_pt
+   >> vis_top_mass
+   >> vis_top_mass_lep1
+   >> vis_top_mass_lep2
+   >> vis_top_pt
+   >> vis_top_pt_lep1
+   >> vis_top_pt_lep2

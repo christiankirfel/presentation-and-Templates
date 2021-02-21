@@ -1,2 +1,2 @@
-\beamer@sectionintoc {1}{A meeting structure proposal}{2}{0}{1}
-\beamer@sectionintoc {2}{Early separation for hadhad}{6}{0}{2}
+\beamer@sectionintoc {1}{Meeting update}{2}{0}{1}
+\beamer@sectionintoc {2}{Early separation for hadhad}{4}{0}{2}

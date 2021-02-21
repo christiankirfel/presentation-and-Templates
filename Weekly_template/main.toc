@@ -1,0 +1,5 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {UKenglish}{}
+\beamer@sectionintoc {1}{Teaching}{2}{0}{1}
+\beamer@sectionintoc {2}{QT}{3}{0}{2}
+\beamer@sectionintoc {3}{Analysis}{4}{0}{3}

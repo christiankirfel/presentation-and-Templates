@@ -16,6 +16,8 @@
 
 \urlstyle{same}
 
+\newcommand\FontSmall{\fontsize{8pt}{7.2}\selectfont}
+
 
 %Package and settings to display Latex code
 \usepackage{listings}
@@ -45,73 +47,236 @@
 \institute{Physikalisches Institut Bonn}
 \date{2020}
 
+%Hi Christian,
+%sorry für die späte Rückmeldung, hier meine Antwort auf die Fragen, hoffe es ist nicht zu lang/ zu schlecht lesbar:
+%
+%1.What should be communicated in a meeting?/2. What would you like to take away from a meeting?
+%
+%a) the hard facts: what is everybody working on, what are future things to take into account, organizational things, what is the status of the different projects, big problems solved
+%b) soft things: minor problems solved and unsolved, soft skills like how to make slides, how to present them, start talking, questions to ask and questions you are going to be asked, basic understanding of everybodies projects, 'snippet information' (I don't have a good explanation of this, but things like 'how does an eta or pt spectrum look like', 'TRExFitter is good for plotting and fitting' stuff you take in from meetings that gives you over time a better understanding of everything and you should know after some time), how does a meeting work (chairing and stuff).
+%c) discussions: new input from other people (especially Ian), other views and priorization, also including maybe a 3rd party (so not everything should be branched out as early as possible nto 'offline'). this is where progress and innovation come from, without that science would not exist! also help from other people can safe you a lot of work, and it can come also from people you are not directly working with  
+%d) not asked for, but additional functions of a meeting: conversation starter with people you should regularly interact as well as people you don't normally talk to (also including those conversations you used to have when leaving the meetingroom after groupmeeting), who/how people are (also no more lunchbreaks)
+%
+%3. How often and when should everybody present?
+%
+%regularly (at least every 2-3 weeks), presenting just once every few month leads to either leading out a big chunk of information (that might be needed for understanding), aka two plots noone understands, or just a messy bulk of presentation. additionally slides are a way to store information, order them in time and go back ('I have seen that before, xy presented something like this', very nice for yourself and personal meetings), and as I already said, regularly making presentations for the group helped me A LOT to become more confident and better at presenting, also for ATLAS meeetings
+%
+%4. Do you feel like you understand most discussions in a meeting?
+%
+%most, not all, but that's fine imo. one can still get 'snippet information'. Sometimes discussions that should be directly done with your supervisor are a little bit too much technically (btw can also be too basic). But overall sometimes point 1/2 violates point 4 for other people
+%
+%5. Do you feel comfortable to present your work and asking questions, and if not, why?
+%overall yes, it took time and many meetings for me, but after all I am good. the only thing that keeps me from it is knowing that you and rico especially despice it getting too long, which is fair and we for sure need to figure out a balance, but after intially incresing the value of meetings for me a bit after cuting on that, it went down again
+%
+%additional comments:
+%- please not too early regular meetings, 9am once a week is bad enough, additionaly a meeting a little bit later allows you to run something overnight & show them on the next day (without last minute stuff and cutting on sleep)
+%- don't incentivise a splitting of the group, it's hard enough right now
+%- my previous experience with agile (whatever we had in tZq) was verry bad mostly due to individuals but also repetition every day and the 'overview talks' were easily the most useless talks I ever listened to, either everyone knows or don't cares, who do you want to convince 'we did all of that, we are good'?
+%
+%
+%overall the idea of having a clear plan and a sort of equalization in participation sounds like it could help the meeting experince of everyone, thanks for taking care of it!
+%
+%Cheers,
+%Tanja
+%
+
+
+%What should be communicated in a meeting?
+%Good question. I think it really depends on the purpose of the meeting. 
+%In the end this depends on the question, what is the purpose of the 
+%group itself and in the end Ian as the leader has to answer this.
+% From my perspective I can imagine two main purposes of a meeting:
+%1. DISCUSS about problems with people, who can help you or are affected 
+%by the problem. I guess these are people, which are MORE EXPERIENCE  or 
+%work on the same or very SIMILAR TOPIC.
+%2. present RESULTS or status of your work to people of the group, which 
+%work on a DIFFERENCT TOPIC, because for one reason it is nice to know 
+%what your colleages do and for another reason it helps you to broaden 
+%your horizon and see you own work in a wider context. Of course you 
+%would not discuss problems with those people.
+%
+%What would you like to take away from a meeting?
+%purpose 1: Ideas or solutions to my problems, information about 
+%problems, which affect me, but I did not notice
+%purpose 2: Learn and understand what the other people in the group do 
+%and how it s related to my work
+%
+%How often and when should everybody present?
+%purpose 1: one should present, when one is stuck and a presentation is 
+%the most effective way to explain the problems to your colleages so that 
+%they can help you most effectively. Maybe this happens once or twice a 
+%week, maybe, once every month oder second month
+%purpose 2: Whenever you have results, whose importance/impact/meaning 
+%can be understood by the people not working on the same topic. Some 
+%steps on the way of your analysis can be very important, but if you 
+%solved a very technical problem or detailed problem, it might be not so 
+%interesting for the others
+%
+%Do you feel you understand most discussions in a meeting?
+%No, I don't.
+%
+%Do you feel comfortable presenting your work and asking questions and if 
+%not why?
+%I have not presented any work. Before my presentation I would like to 
+%know, what the other people already know and what they are interested 
+%in. Should I go into detail to get detailed feedback (purpose 1) or is 
+%this boring to the others (purpose 2)?
+%
+%The same about the questions: I have no problems to ask, if I did not 
+%understand something that was presented in order to teach/inform me. But 
+%I won't ask, if I feel I am not addressed by the presentation/discussion.
+%
+%So my suggestion is, to not mix up these 2 purposes, i.e. discussions 
+%only with people, who can understand the problem, follow the discussion 
+%and give contributions. Maybe you could have one meeting a week for 
+%purpose 1 and another for purpose 2 or one meeting a week with a short 
+%status report and maybe presentations (purpose 2) and another meeting 
+%without Master students for discussions which cannot be understood my 
+%Master students (purpose 1).
+
+%What should be communicated in a meeting?
+%Essential status, accomplished tasks , and ongoing tasks/problems. This way Ian gets his status report and problems can be either discussed by many or a supervisor can be assigned to the issue.
+%What would you like to take away from a meeting?
+%The help I need for my problems if I present any
+%How often and when should everybody present?
+%When they have something to present. Setting a schedule to present will quickly deteriorate as not everyone will have results by then. Setting an "every 3 weeks" will just be demoralizing for those that are stuck in some issues or have nothing to present at the moment. 
+%Do you understand most discussions in a meeting?
+%Yes. Thats how I know I am a big boy now. 
+%Do you feel comfortable presenting and asking for advise?
+%Yep.
+%
+%What should be communicated in a meeting?
+%
+%- I think its great to discuss the general things and then switch to a short status update from everyone.
+%- I don’t think its good for a group meeting to have a long status update because most of the time this includes 2 or 3 instead of e.g. 13 people and it would be better to discuss this in a separate meeting with this smaller group.
+%
+%What would you like to take away from a meeting?
+%
+%- general overview what everyone is doing
+%- give people my help when they need it
+%- sometimes people have a cool idea about my study and I am helpful for that
+%
+%How often and when should everybody present?
+%
+%- I think a group meeting one time in a week is fine because often we work on tasks where you cannot find a result within one day, so I guess a weekly or a monthly would be a good choice instead of a daily.
+%
+%Do you feel like you understand most discussions in a meeting?
+%
+%- Especially when you are a beginner in the group its kind of difficult to understand what everyone is doing. It needs weeks to get into the topics and it may be easier when we use a kanban board to see, what everyone is working on to also get the overview about the work and progress.
+%
+%Do you feel comfortable presenting your work and asking questions and if now why?
+%
+%- I feel comfortable presenting the work when I have some good results and not being forced to just present something because we have to present something. But that wasn’t the case yet.
+
+%zu 1:
+%- Statusbereichte sprich was macht man gerade, was will man machen, was hat man gemacht; außerdem Probleme, die währenddessen auftauchen und die Diskussion über die jeweiligen Sachen
+%
+%zu 2:
+%- Ideen und Lösungen für meine Arbeit; evtl. erweitertes Verständnis über die Projekte der anderen Gruppenmitglieder
+%
+%zu 3:
+%- kurzer Statusbericht immer, aber viel nur, wenn man etwas zu sagen hat sprich Resultate und/oder Probleme
+%
+%zu 4:
+%- nein in vielen Sachen fehlt mir der Kontext und das Detailwissen
+%
+%zu 5:
+%- nein, weil das was ich bis jetzt geschafft habe noch nicht so sehenswert genug ist; ich frage ungern Fragen im Gruppenmeeting um nicht Zeit von Allen zu nehmen, obwohl die Atmospäre nicht abschreckend wirkt
+
+%Communicated:
+%Topics worked on in the last week.
+%Main results.
+%Problems that could not be solved.
+%General information that could be useful to other group members.
+%
+%Take away:
+%Understandable overview on where people are at.
+%Problems that they had (and hopefully solutions).
+%Hints or solutions to my own problems.
+%Ideas/plan on how to move ahead.
+%Things that need more detailed discussion and with whom.
+%
+%Presence:
+%Always, unless there is a good excuse.
+%
+%Discussion:
+%Yes
+%
+%Comfortable:
+%Yes
+
 
 
 \begin{document}
 
 \frame{\titlepage}
 
-\section{A meeting structure proposal}
+\section{Meeting update}
 
-\begin{frame}{Ideas of meetings}
+\begin{frame}{Meeting changes}
     \begin{itemize}
-        \item What should be communicated in a meeting?
-        \item What would you like to take away from a meeting?
-        \item How often and when should everybody present?
-        \item Do you feel like you understand most discussions in a meeting?
-        \item Do you feel comfortable presenting your work and asking questions and if not why?
+        \item Daily stand-up meeting at 9 in the Zoom meeting room
+        \item Meeting moved to Friday at 13:00
+        \item Adding a Jira to keep track of work
+        \item Added the possibility of scheduling larger presentations in the meeting and have them moderated.
+        \item Ian will upload his minutes (?)
     \end{itemize}
 \end{frame}
 
-\begin{frame}{My answers}
-    \begin{itemize}
-        \item In a meeting a status update should be given and it should be communicated how is working on what and where the difficulties lie.
-        \item I like to be updated on general things and I need the meeting to understand who might need my help.
-        \item I think a presentation should either by very brief and every or every second week or only when one has really new results or questions. I would like a soft obligation to present once a month.
-        \item I now understand almost all discussions. Halfway through my Master a lot of topics were not clear to me. In Zoom meetings I find it harder to listen.
-        \item I feel comfortable presenting, sometimes I dislike speaking for too long when the meeting is already long.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{A suggestion}
-    \begin{itemize}
-        \item Add timeslots to the meeting to allow better planning of the allocated time.
-        \item Add a Jira to improve the planning of tasks and streamline the reports
-        \item Use Jira to have discussions and keep them available
-        \item Maybe use a loose Sprint structure to decide for presentation deadlines
-        \item What do you think?
-    \end{itemize}
-\end{frame}
 
 \section{Early separation for hadhad}
+%
+\begin{frame}
+    \begin{itemize}
+        \item Example separation of tZq vs ttbar in hadhad
+        \item Soon to be switched to tHq vs ttbar, diboson and more (?)
+        \vspace{0.2cm}
+        \item Using variables good for this separation
+        \item Using Lorentz invariant variables
+        \vspace{0.2cm}
+        \item Based on results Chelsea created. Thank you!
+        \item $2 \times 120$ nodes
+        \item Adam
+        \item $80\% dropout$
+    \end{itemize}
+\end{frame}
 
 \begin{frame}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width = \textwidth]{}
+                \includegraphics[width = \textwidth]{loss}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width = \textwidth]{}
+                \includegraphics[width = \textwidth]{Response}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width = \textwidth]{}
+                \includegraphics[width = \textwidth]{acc}
             \end{figure}
             \begin{figure}
                 \centering
-                \includegraphics[width = \textwidth]{}
+                \includegraphics[width = \textwidth]{ROC}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
-
-
-
+\begin{frame}{Conclusions}
+    \begin{itemize}
+        \item Problems with stability
+        \item Overtraining is not solved by my earlystopping yet
+        \item Variables have to be refined
+        \item Next week Mathias will join me with a lephad net in parallel
+    \end{itemize}
+\end{frame}
+%
+%
+%
+%
 
 \end{document}

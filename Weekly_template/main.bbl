@@ -1,0 +1,72 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{naranjo}{article}{}
+      \name{author}{5}{}{%
+        {{hash=569284a4adaa48de028888ce5387b52c}{%
+           family={Martín\bibnamedelima García},
+           familyi={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=59998a34f17fd701a1fdc1847e52de5f}{%
+           family={Lara-Cabrera},
+           familyi={L\bibinithyphendelim C\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8025ddd9b4f35f2db2899a8744031691}{%
+           family={Fuentes},
+           familyi={F\bibinitperiod},
+           given={Félix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1a52cfb2e33ed6bc4cf78dea75c09f03}{%
+           family={Naranjo},
+           familyi={N\bibinitperiod},
+           given={Valery},
+           giveni={V\bibinitperiod}}}%
+        {{hash=7f33bd78882912296d498cc2a24c624e}{%
+           family={Camacho},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e746419e9c33987498c3b43abb64f50}
+      \strng{fullhash}{e346ce4b6c0f1ed04942bf7174eb7680}
+      \strng{bibnamehash}{5e746419e9c33987498c3b43abb64f50}
+      \strng{authorbibnamehash}{5e746419e9c33987498c3b43abb64f50}
+      \strng{authornamehash}{5e746419e9c33987498c3b43abb64f50}
+      \strng{authorfullhash}{e346ce4b6c0f1ed04942bf7174eb7680}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Parallel and Distributed Computing}
+      \field{month}{10}
+      \field{title}{EvoDeep: a new Evolutionary approach for automatic Deep Neural Networks parametrisation}
+      \field{volume}{117}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1016/j.jpdc.2017.09.006
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
