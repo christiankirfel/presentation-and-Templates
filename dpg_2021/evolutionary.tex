@@ -14,25 +14,25 @@
     \end{block}
 \end{frame}
 
-\begin{frame}{Training specifications (Redundant?) }
-  \begin{itemize}
-      \item Training a deep neural network
-      \vspace{0.2cm}
-      \item Coarse optimisation using an evolutionary neural network
-      \vspace{0.2cm}
-      \item Fine optimisation doing a grid search
-      \vspace{0.2cm}
-      \item Optimised hyperparameters:
-          \begin{itemize}
-              \item Number of nodes
-              \item Number of layers
-              \item Dropout percentage
-          \end{itemize}
-      \item Signal: \tHq
-      \item Background: \ttbar
-      \item Using absolute weights
-  \end{itemize}
-\end{frame}
+%\begin{frame}{Training specifications (Redundant?) }
+%  \begin{itemize}
+%      \item Training a deep neural network
+%      \vspace{0.2cm}
+%      \item Coarse optimisation using an evolutionary neural network
+%      \vspace{0.2cm}
+%      \item Fine optimisation doing a grid search
+%      \vspace{0.2cm}
+%      \item Optimised hyperparameters:
+%          \begin{itemize}
+%              \item Number of nodes
+%              \item Number of layers
+%              \item Dropout percentage
+%          \end{itemize}
+%      \item Signal: \tHq
+%      \item Background: \ttbar
+%      \item Using absolute weights
+%  \end{itemize}
+%\end{frame}
 
 \begin{frame}{Evolutionary optimisation of neural networks}
     \begin{itemize}
@@ -53,12 +53,14 @@
 \begin{frame}{Example of an evolutionary training}
     \begin{columns}
         \begin{column}{0.5\textwidth}
+            \vspace{-0.4cm}
             \begin{itemize}
-                \item \tHq as signal against \ttbar as background
-                \item Using basic kinematic variables
-                \item Region: 2j1b
-                \item Weights: absolute
+                \item Signal: \tHq
+                \vspace{0.3cm}
+                \item Background: \ttbar
+                \vspace{0.3cm}
                 \item Testing: nodes, layers, dropout
+                \vspace{0.3cm}
                 \item Fixed hyperparameters:
                     \begin{itemize}
                         \item Optimizer: Adam

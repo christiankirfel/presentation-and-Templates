@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.14)  25 FEB 2021 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.14)  25 FEB 2021 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2085,25 +2085,25 @@ LaTeX Info: Redefining \HepProcess on input line 137.
 <sgBkgComp.png, id=94, 798.985pt x 774.895pt>
 File: sgBkgComp.png Graphic file (type png)
 <use sgBkgComp.png>
-Package pdftex.def Info: sgBkgComp.png  used on input line 19.
+Package pdftex.def Info: sgBkgComp.png  used on input line 24.
 (pdftex.def)             Requested size: 153.64493pt x 149.00516pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 19.
+LaTeX Info: Redefining \HepProcess on input line 24.
 [4
 
  </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/sgBkgComp.png>])
 LaTeX Info: Redefining \HepProcess on input line 139.
  (/cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/negativeWeights.tex
-<ROC_normalWeights.png, id=107, 731.3724pt x 561.89925pt>
+<ROC_normalWeights.png, id=108, 731.3724pt x 561.89925pt>
 File: ROC_normalWeights.png Graphic file (type png)
 <use ROC_normalWeights.png>
 Package pdftex.def Info: ROC_normalWeights.png  used on input line 27.
 (pdftex.def)             Requested size: 153.64493pt x 118.03662pt.
-<ROC_absoluteWeights.png, id=109, 731.3724pt x 561.89925pt>
+<ROC_absoluteWeights.png, id=110, 731.3724pt x 561.89925pt>
 File: ROC_absoluteWeights.png Graphic file (type png)
 <use ROC_absoluteWeights.png>
 Package pdftex.def Info: ROC_absoluteWeights.png  used on input line 27.
@@ -2131,7 +2131,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 35.
+LaTeX Info: Redefining \HepProcess on input line 49.
 [7
 
 ]
@@ -2139,54 +2139,46 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 49.
+LaTeX Info: Redefining \HepProcess on input line 90.
 [8
 
 ]
-Overfull \hbox (10.24672pt too wide) has occurred while \output is active
- []$  
- []
-
-LaTeX Info: Redefining \HepProcess on input line 88.
-[9
-
-]
-<grid_ROC.png, id=165, 731.3724pt x 561.89925pt>
+<grid_ROC.png, id=155, 731.3724pt x 561.89925pt>
 File: grid_ROC.png Graphic file (type png)
 <use grid_ROC.png>
-Package pdftex.def Info: grid_ROC.png  used on input line 125.
+Package pdftex.def Info: grid_ROC.png  used on input line 127.
 (pdftex.def)             Requested size: 153.64493pt x 118.03662pt.
-<evo_ROC.png, id=166, 731.3724pt x 561.89925pt>
+<evo_ROC.png, id=156, 731.3724pt x 561.89925pt>
 File: evo_ROC.png Graphic file (type png)
 <use evo_ROC.png>
-Package pdftex.def Info: evo_ROC.png  used on input line 125.
+Package pdftex.def Info: evo_ROC.png  used on input line 127.
 (pdftex.def)             Requested size: 153.64493pt x 118.03662pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 125.
-[10
+LaTeX Info: Redefining \HepProcess on input line 127.
+[9
 
  </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/grid_ROC.png> </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/evo_ROC.png>]
-<grid_response.png, id=180, 717.27975pt x 563.706pt>
+<grid_response.png, id=169, 717.27975pt x 563.706pt>
 File: grid_response.png Graphic file (type png)
 <use grid_response.png>
-Package pdftex.def Info: grid_response.png  used on input line 145.
+Package pdftex.def Info: grid_response.png  used on input line 147.
 (pdftex.def)             Requested size: 153.64493pt x 120.74715pt.
-<evo_response.png, id=181, 717.27975pt x 563.706pt>
+<evo_response.png, id=170, 717.27975pt x 563.706pt>
 File: evo_response.png Graphic file (type png)
 <use evo_response.png>
-Package pdftex.def Info: evo_response.png  used on input line 145.
+Package pdftex.def Info: evo_response.png  used on input line 147.
 (pdftex.def)             Requested size: 153.64493pt x 120.74715pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 145.
-[11
+LaTeX Info: Redefining \HepProcess on input line 147.
+[10
 
  </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/grid_response.png> </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/evo_response.png>])
 LaTeX Info: Redefining \HepProcess on input line 143.
@@ -2196,7 +2188,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 8.
-[12
+[11
 
 ])
 \tf@nav=\write9
@@ -2222,18 +2214,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44720 strings out of 494757
- 886736 string characters out of 6175784
- 1307550 words of memory out of 5000000
- 47240 multiletter control sequences out of 15000+600000
+ 44652 strings out of 494757
+ 885342 string characters out of 6175784
+ 1307503 words of memory out of 5000000
+ 47174 multiletter control sequences out of 15000+600000
  569322 words of font info for 117 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  68i,18n,108p,10462b,2295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1440.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0700.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on /cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/main.pdf (12 pages, 1144161 bytes).
+Output written on /cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/main.pdf (11 pages, 1135436 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 28 named destinations out of 1000 (max. 500000)
  192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

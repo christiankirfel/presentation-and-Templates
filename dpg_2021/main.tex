@@ -70,9 +70,9 @@
   \ifnum\inserttotalframenumber>45\relax
     \renewcommand\step{0pt}
   \fi%
-  \pgfmathsetmacro{\aux}{360/21}
+  \pgfmathsetmacro{\aux}{360/11}
   \begin{tikzpicture}[remember picture,overlay, rotate=90+\aux]
-  \foreach \i in {0,1,...,21}
+  \foreach \i in {0,1,...,11}
     \fill[logo_blue] 
       (0,0) -- (-\i*\aux:\radius) arc  (-\i*\aux:-(\i+1)*\aux+\step:\radius) -- cycle;
   \foreach \i in {1,...,\insertframenumber}
