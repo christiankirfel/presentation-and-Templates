@@ -1,52 +1,63 @@
-\begin{frame}{\tHq ditau hadhad channel selection}
+\begin{frame}{The \tHq lepditau channel}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{higgsBranching.PNG}
+        \caption{\cite{PhysRevD.98.030001}}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Relatively high branching ratio
+        \vspace{0.3cm}
+        \item Hadronically decaying taus are more difficult to select than leptonic ones
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}{\tHq lepditau channel selection}
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \centering \includegraphics[width=0.7\textwidth]{tHq_tautau}\\
       %\includegraphics[width=0.45\textwidth]{/cephfs/user/s6chkirf/feynman_diagrams/tHq_WW}
       %\includegraphics[width=0.45\textwidth]{/cephfs/user/s6chkirf/feynman_diagrams/tHq_ZZ}
       \begin{itemize}
-        \item n-jets: 2 (b-jets: \textbf{1})
-        \item b-jet WP: 70 DL1r
-        \item nLeptons \& nTaus: \bf{$1e / \mu~2\tau_{\text{had}}$}
+        \item Number of jets: 2
+        \item Number of b-jets: 1
+        \item number of leptons: \bf{$1e / \mu$}
+        \item number of taus: 2 hadronic taus
         \item $E_{\text{T,miss}}$: no cut (to \SI{800}{GeV})
       \end{itemize}
     \end{column}
     \begin{column}{0.7\textwidth}
       \vspace*{-0.05\textwidth}
       \begin{itemize}
-        \footnotesize
-        \item jets:
+        \item Jets:
         \vspace*{-0.02\textwidth}
         \begin{itemize}
-          \footnotesize
           \item $p_T>\SI{35}{GeV}$
           \item $|\eta|<4.5$
-          \item EMPFlow
         \end{itemize}
-        \item electrons:
+        \item Electrons:
         \vspace*{-0.02\textwidth}
         \begin{itemize}
-          \footnotesize
           \item $p_T>\SI{20}{GeV}$ leading \SI{27}{GeV}
           \item $|\eta|<2.5$ not in 1.37 - 1.52
-          \item WP: LooseAndBLayerLH ; \\isolation: no requirement
         \end{itemize}
-        \item muons:
+        \item Muons:
         \vspace*{-0.02\textwidth}
         \begin{itemize}
-          \footnotesize
           \item $p_T>\SI{20}{GeV}$ leading \SI{27}{GeV}
           \item $0.01<|\eta|<2.5$
-          \item WP: Loose ; isolation: no requirement
         \end{itemize}
-        \item taus:
+        \item Taus:
         \vspace*{-0.02\textwidth}
         \begin{itemize}
-          \footnotesize
           \item $p_T>\SI{20}{GeV}$ leading \SI{27}{GeV}
           \item $|\eta|<2.5$ not in 1.37 - 1.52
-          \item WP: RNNLoose
-          \item ASG recommended OLR ($\tau_{had}$ remove jets)
         \end{itemize}
       \end{itemize}
     \end{column}
