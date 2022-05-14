@@ -1,0 +1,77 @@
+## META
+verbose_level INFO
+workflow train
+model_name net1000
+output_dir NN_Images/gridAuto/net1000_3x180_1000_elu,elu,sigmoid_LR0.01_Mom.00_DecDEFAULT_DR0.8_DEFAULT_DEFAULT
+
+#### Training step configuration
+## Meta
+dnn_method binary
+#0 lepton files
+#########
+sFile /cephfs/user/s5maweis/ANN/tHq_signal_links/*
+bFile /cephfs/user/s5maweis/ANN/tHq_background_links/*
+weightName weight_nominal
+weightSetup absolute
+#treename tHqLoop_nominal_Loose
+treename tHqLoop_nominal_Loose
+selection 2j1b
+
+## Network Structure
+nNodes 180
+nHiddenLayers 3
+epochs 1000
+dropout 0.8
+batch_size 1000
+activations elu,elu,sigmoid
+output_dim 1
+init lecun_normal
+
+## Optimizer
+optimizer cadam
+lr 0.01
+decay None
+momentum .00
+nesterov True
+loss binary_crossentropy
+#f_1,f_0 (S,B) only two are supported
+
+## Training Setup
+kfold_splits 1
+features conf/tHq_VarList_mathias_lephad_kinematic.txt
+fullFeatures conf/tHq_VarList_mathias_lephad_kinematic.txt
+evFrac 0.25
+lepSel None
+doDecorr False
+useBatchNorm True
+useAlphaDropout False
+corrCut .25
+#eStop monitor,val_loss,min_delta,0.000001,patience,100,mode,min
+# eStop monitor,val_loss,min_delta,0.0001,patience,100,mode,min,restore_best_weights,True
+
+## Preprocessing
+doRanking false
+plotvars false
+rankingCut 1.
+
+#### Predict/output step configuration
+## Files
+dataFile /cephfs/user/s6taholm/tHq/run/12-10-lephad/out_mathias_tHq.root
+MCDir /cephfs/user/s6taholm/tHq/run/12-10-lephad/ttbar_12-10.root
+
+
+## Lumi Settings
+lumiWeight 140.45226
+
+## Extra Settings
+exclusion_list Loose,IFSR,AF2,data,Data
+
+## Save Settings (predict only) Only available in uproot 3.10+
+#saveFormat hist
+saveFormat tree
+oneFile false
+saveVars true
+saveProcessedVars False
+doParticleLevel False
+
+isHTC True

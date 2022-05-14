@@ -1,0 +1,34 @@
+\begin{frame}{Hyperparameters}
+  \begin{itemize}
+    \item Optimised by small grid search
+  \end{itemize}
+    \begin{table}[]
+    \begin{tabular}{|l|l|}
+    \hline
+    Hyperparameter          &     Setting              \\ \hline
+    Model                   &     Categorical          \\ \hline
+    Nodes                   &     120                  \\ \hline
+    Layers                  &     6                    \\ \hline
+    Dropout                 &     0.65                 \\ \hline
+    Batchnormalisation      &     On                   \\ \hline
+    Activation              &     elu                  \\ \hline
+    Output activation       &     Softmax              \\ \hline
+    Batch size              &     1000                 \\ \hline
+    Optimisation            &     Adam                 \\ \hline
+    Weight Initialisation   &     Lecun Normalisation  \\ \hline
+    K-folds                 &     4                    \\ \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Results}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+          \includegraphics[width=0.8\textwidth]{losses_cat}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \includegraphics[width=0.8\textwidth]{ROC_cat}
+          \includegraphics[width=0.8\textwidth]{response_cat}
+        \end{column}
+    \end{columns}    
+\end{frame}

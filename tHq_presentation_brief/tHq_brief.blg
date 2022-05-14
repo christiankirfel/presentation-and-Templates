@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[1] Config.pm:314> INFO - Logfile is 'tHq_brief.blg'
+[198] biber:340> INFO - === Wed Mar  9, 2022, 08:34:55
+[263] Biber.pm:415> INFO - Reading 'tHq_brief.bcf'
+[405] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[418] Utils.pm:384> WARN - The file 'tHq_brief.bcf' does not contain any citations!
+[432] bbl.pm:654> INFO - Writing 'tHq_brief.bbl' with encoding 'UTF-8'
+[432] bbl.pm:757> INFO - Output to tHq_brief.bbl
+[436] Biber.pm:128> INFO - WARNINGS: 1

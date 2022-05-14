@@ -1,0 +1,18 @@
+\begin{frame}{Categorical classification}
+    \begin{block}{Underlying problem}
+        \begin{itemize}
+            \item Treating tZq as background lead to heavy missclassification
+            \item Giving tZq a different training label should decrease the problem
+        \end{itemize}
+    \end{block}
+    \begin{block}{Technicalities}
+        \begin{itemize}
+            \item Use OneHotEncoding to give labels to signal, background and tZq
+            \item Plot response and ROC for every label separately
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Response plots}
+    \includegraphics[width=0.8\textwidth]{lephad_cat.png}
+\end{frame}

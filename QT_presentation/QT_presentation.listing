@@ -1,0 +1,5 @@
+        NTUPMerge_tf.py
+        --inputNTUP_PHYSVALFile=$MERGE_REF
+        --AMITag="p3821"
+        --outputNTUP_PHYSVAL_MRGFile="output_ref.root"
+    

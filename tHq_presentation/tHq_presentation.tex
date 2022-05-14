@@ -72,9 +72,9 @@
   \ifnum\inserttotalframenumber>45\relax
     \renewcommand\step{0pt}
   \fi%
-  \pgfmathsetmacro{\aux}{360/13}
+  \pgfmathsetmacro{\aux}{360/11}
   \begin{tikzpicture}[remember picture,overlay, rotate=90+\aux]
-  \foreach \i in {0,1,...,13}
+  \foreach \i in {0,1,...,11}
     \fill[logo_blue] 
       (0,0) -- (-\i*\aux:\radius) arc  (-\i*\aux:-(\i+1)*\aux+\step:\radius) -- cycle;
   \foreach \i in {1,...,\insertframenumber}
@@ -93,8 +93,8 @@
 
 \begin{document} 
 
-\title[Neural network results in the ditau hadhad channel]{Neural network analysis for hadronic tau channels}
-\subtitle{9th of December 2020}
+\title[Neural network results in the ditau hadhad channel]{Hadronic Tau MVA}
+\subtitle{\today}
 \author{Christian Kirfel}
 %\institute{Universtität Bonn}
         
@@ -124,19 +124,22 @@
 \end{frame}
 \addtobeamertemplate{navigation symbols}{\vspace*{0.8cm}\hfill\circcounter\hspace*{0.7cm}}
 
+%\section{Neural network}
+%\input{intro.tex}
+\section{Optimisation}
+%\input{optimisation_hadhad.tex}
+\input{optimisation_lephad.tex}
+\section{Categorical classification}
+%\input{categorical_hadhad.tex}
+\input{categorical_lephad.tex}
+%\input{negWeights_hadhad.tex}
+%\section{BDT}
+%\input{BDT.tex}
+%\section{lephad}
+%\input{lephad.tex}
+%\input{conclusion.tex}
 
-\section{Prerequisites}
-\input{intro.tex}
-
-\section{hadhad}
-\input{hadhad.tex}
-
-\section{lephad}
-\input{lephad.tex}
-\section{Conclusion}
-\input{conclusion.tex}
-
-\input{backup.tex}
+%\input{backup.tex}
 
 
 

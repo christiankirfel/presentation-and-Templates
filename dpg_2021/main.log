@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.30)  2 MAR 2021 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.30)  15 MAR 2021 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2062,36 +2062,31 @@ Package pdftex.def Info: fsp_logo.png  used on input line 130.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/fsp_logo.png (PNG copy)>]
 LaTeX Info: Redefining \HepProcess on input line 135.
  (/cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/intro.tex
-<higgsBranching.PNG, id=43, 557.08125pt x 487.8225pt>
-File: higgsBranching.PNG Graphic file (type png)
-<use higgsBranching.PNG>
-Package pdftex.def Info: higgsBranching.PNG  used on input line 18.
-(pdftex.def)             Requested size: 153.64493pt x 134.54239pt.
+<PieChart_hadhad.png, id=43, 748.7975pt x 436.63126pt>
+File: PieChart_hadhad.png Graphic file (type png)
+<use PieChart_hadhad.png>
+Package pdftex.def Info: PieChart_hadhad.png  used on input line 21.
+(pdftex.def)             Requested size: 291.92444pt x 170.22554pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 18.
+LaTeX Info: Redefining \HepProcess on input line 21.
 [2
 
- </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/higgsBranching.PNG>]
-<tHq_tautau.pdf, id=71, 136.02016pt x 112.6609pt>
+ </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/PieChart_hadhad.png (PNG copy)>]
+<tHq_tautau.pdf, id=66, 148.57005pt x 112.6609pt>
 File: tHq_tautau.pdf Graphic file (type pdf)
 <use tHq_tautau.pdf>
-Package pdftex.def Info: tHq_tautau.pdf  used on input line 65.
-(pdftex.def)             Requested size: 107.55098pt x 89.08192pt.
-
-Overfull \hbox (4.55153pt too wide) detected at line 65
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
+Package pdftex.def Info: tHq_tautau.pdf  used on input line 43.
+(pdftex.def)             Requested size: 153.64493pt x 116.51477pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 65.
+LaTeX Info: Redefining \HepProcess on input line 43.
 [3
 
  </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/tHq_tautau.pdf>]) (/cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/challenges.tex
@@ -2109,7 +2104,7 @@ LaTeX Info: Redefining \HepProcess on input line 20.
 ])
 LaTeX Info: Redefining \HepProcess on input line 138.
  (/cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/backgroundProcesses.tex
-<sgBkgComp.png, id=110, 798.985pt x 774.895pt>
+<sgBkgComp.png, id=106, 798.985pt x 774.895pt>
 File: sgBkgComp.png Graphic file (type png)
 <use sgBkgComp.png>
 Package pdftex.def Info: sgBkgComp.png  used on input line 26.
@@ -2125,22 +2120,22 @@ LaTeX Info: Redefining \HepProcess on input line 26.
  </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/sgBkgComp.png>])
 LaTeX Info: Redefining \HepProcess on input line 140.
  (/cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/negativeWeights.tex
-<ROC_normalWeights.png, id=123, 731.3724pt x 561.89925pt>
+<ROC_normalWeights.png, id=120, 731.3724pt x 561.89925pt>
 File: ROC_normalWeights.png Graphic file (type png)
 <use ROC_normalWeights.png>
-Package pdftex.def Info: ROC_normalWeights.png  used on input line 27.
+Package pdftex.def Info: ROC_normalWeights.png  used on input line 29.
 (pdftex.def)             Requested size: 153.64493pt x 118.03662pt.
-<ROC_absoluteWeights.png, id=124, 731.3724pt x 561.89925pt>
+<ROC_absoluteWeights.png, id=122, 731.3724pt x 561.89925pt>
 File: ROC_absoluteWeights.png Graphic file (type png)
 <use ROC_absoluteWeights.png>
-Package pdftex.def Info: ROC_absoluteWeights.png  used on input line 27.
+Package pdftex.def Info: ROC_absoluteWeights.png  used on input line 29.
 (pdftex.def)             Requested size: 153.64493pt x 118.03662pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 27.
+LaTeX Info: Redefining \HepProcess on input line 29.
 [6
 
  </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/ROC_normalWeights.png> </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/ROC_absoluteWeights.png>])
@@ -2162,16 +2157,11 @@ LaTeX Info: Redefining \HepProcess on input line 49.
 [8
 
 ]
-<flowchart.pdf, id=158, 821.49408pt x 370.28539pt>
+<flowchart.pdf, id=156, 694.92424pt x 279.90672pt>
 File: flowchart.pdf Graphic file (type pdf)
 <use flowchart.pdf>
 Package pdftex.def Info: flowchart.pdf  used on input line 53.
-(pdftex.def)             Requested size: 368.7469pt x 166.21442pt.
-
-Overfull \hbox (61.45703pt too wide) in paragraph at lines 53--53
- [][] 
- []
-
+(pdftex.def)             Requested size: 307.28987pt x 123.77435pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
@@ -2189,12 +2179,12 @@ LaTeX Info: Redefining \HepProcess on input line 94.
 [10
 
 ]
-<grid_ROC.png, id=187, 731.3724pt x 561.89925pt>
+<grid_ROC.png, id=185, 731.3724pt x 561.89925pt>
 File: grid_ROC.png Graphic file (type png)
 <use grid_ROC.png>
 Package pdftex.def Info: grid_ROC.png  used on input line 132.
 (pdftex.def)             Requested size: 153.64493pt x 118.03662pt.
-<evo_ROC.png, id=188, 731.3724pt x 561.89925pt>
+<evo_ROC.png, id=186, 731.3724pt x 561.89925pt>
 File: evo_ROC.png Graphic file (type png)
 <use evo_ROC.png>
 Package pdftex.def Info: evo_ROC.png  used on input line 132.
@@ -2208,12 +2198,12 @@ LaTeX Info: Redefining \HepProcess on input line 132.
 [11
 
  </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/grid_ROC.png> </cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/evo_ROC.png>]
-<grid_response.png, id=201, 731.3724pt x 561.89925pt>
+<grid_response.png, id=199, 731.3724pt x 561.89925pt>
 File: grid_response.png Graphic file (type png)
 <use grid_response.png>
 Package pdftex.def Info: grid_response.png  used on input line 152.
 (pdftex.def)             Requested size: 153.64493pt x 118.03662pt.
-<evo_response.png, id=202, 731.3724pt x 561.89925pt>
+<evo_response.png, id=200, 731.3724pt x 561.89925pt>
 File: evo_response.png Graphic file (type png)
 <use evo_response.png>
 Package pdftex.def Info: evo_response.png  used on input line 152.
@@ -2233,7 +2223,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 8.
+LaTeX Info: Redefining \HepProcess on input line 11.
 [13
 
 ])
@@ -2260,20 +2250,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45875 strings out of 494757
- 916368 string characters out of 6175785
- 1336664 words of memory out of 5000000
- 48383 multiletter control sequences out of 15000+600000
+ 45675 strings out of 494757
+ 912366 string characters out of 6175785
+ 1334603 words of memory out of 5000000
+ 48185 multiletter control sequences out of 15000+600000
  564661 words of font info for 104 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  68i,18n,108p,10462b,2295s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.0@PhysRevD.98.030001} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1440.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0700.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on /cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/main.pdf (13 pages, 1505928 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1440.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0700.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb>
+Output written on /cephfs/user/s6chkirf/presentationsAndTemplates/dpg_2021/main.pdf (13 pages, 1460458 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 32 named destinations out of 1000 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

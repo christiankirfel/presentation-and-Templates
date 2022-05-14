@@ -39,6 +39,7 @@
 
 \graphicspath{%
   {./feynman_diagrams/}%
+  {./../../TRExFitter/NN_hadhad/Plots/}%
   {./figures_theory/}%
   {./figures_simple/}%
   {./figures_misc/}%
@@ -71,9 +72,9 @@
   \ifnum\inserttotalframenumber>45\relax
     \renewcommand\step{0pt}
   \fi%
-  \pgfmathsetmacro{\aux}{360/9}
+  \pgfmathsetmacro{\aux}{360/5}
   \begin{tikzpicture}[remember picture,overlay, rotate=90+\aux]
-  \foreach \i in {0,1,...,9}
+  \foreach \i in {0,1,...,5}
     \fill[logo_blue] 
       (0,0) -- (-\i*\aux:\radius) arc  (-\i*\aux:-(\i+1)*\aux+\step:\radius) -- cycle;
   \foreach \i in {1,...,\insertframenumber}
@@ -92,8 +93,8 @@
 
 \begin{document} 
 
-\title[Bachelorvortrag]{Weekly update}
-\subtitle{19th of August 2020}
+\title[Bachelorvortrag]{Meetings - A workshop summary}
+\subtitle{22nd of April}
 \author{Christian Kirfel}
 %\institute{Universtität Bonn}
         
@@ -124,18 +125,59 @@
 \addtobeamertemplate{navigation symbols}{\vspace*{0.8cm}\hfill\circcounter\hspace*{0.7cm}}
 
 
-\section{Teaching}
-\input{teaching.tex}
-\section{QT}
-\input{qt.tex}
-\section{Analysis}
-\input{analysis.tex}
+%\section{Teaching}
+%\input{teaching.tex}
+%\section{QT}
+%\input{qt.tex}
+%\section{Analysis}
+%\input{analysis.tex}
 
-\begin{frame}{Sources}
-
-\printbibliography
-    
+\begin{frame}
+  \begin{center}
+  \Huge Pünktlichkeit ist die Höflichkeit der Könige.
+  %Why do I mention this. Well. Often times we poison our relationships and meeting atmosphere by accepting unnecessary behaviour.
+  %Behaviour we despise but feel like it is impolite to speak up about
+  \end{center}
 \end{frame}
+
+\begin{frame}{Tips for efficient meetings}
+  \begin{itemize}
+    \item Define the objectives of the meeting. Otherwise, no decision will be made.
+    \item Create and agenda and stick to it. Make sure people only talk about one topic at a time.
+    \item Keep the circle of participants small. If decisions are to be made, invite no more than 6 people.
+    \item Invite only people who are essential. Avoid making the meeting a ritual.
+    \item Keep it short, not more than 45 minutes.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Tips for efficient meetings}
+  \begin{itemize}
+    \item Make sure the mood is positive.
+    \item Conduct the meeting in a strict but collegial manner.
+    \item Separate person and subject.
+    \item Never criticise in front of others.
+    \item Let the leadership rotate among the participants.
+    \item Give an employee the opportunity to leave when the agenda topics than concern him have been covered.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Tips for efficient meetings}
+  \begin{itemize}
+    \item Distinguish between informative meetings and decision-making meetings.
+    \item Stop denying the limitation of attention spans.
+    \item Admit to yourself if a meeting annoys you, improve your own efficiency.
+    \item Agenda, timeslots, punctuality are important elements to keep a positive atmosphere.
+  \end{itemize}
+\end{frame}
+
+%\input{TRexPlots.tex}
+
+%\begin{frame}{Sources}
+
+%\printbibliography
+    
+%\end{frame}
 
 
 

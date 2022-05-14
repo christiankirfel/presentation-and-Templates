@@ -1,0 +1,7 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {UKenglish}{}
+\beamer@sectionintoc {1}{Neural Networks}{2}{0}{1}
+\beamer@sectionintoc {2}{Binary}{2}{0}{2}
+\beamer@sectionintoc {3}{\ensuremath {\Pqt \PZ \Pq }\xspace difficulties}{11}{0}{3}
+\beamer@sectionintoc {4}{Categorical}{14}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{24}{0}{5}

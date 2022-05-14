@@ -1,0 +1,187 @@
+\begin{frame}
+    \begin{center}
+        \Huge \tHq \\ A binary classifier
+    \end{center}
+\end{frame}
+
+\begin{frame}{Channel selection}
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+        \centering \includegraphics[width=0.8\textwidth]{/cephfs/user/s6chkirf/feynman_diagrams/tHq_tautau}\\
+                \begin{itemize}
+          \item n-jets: at least 2 (b-jets: \textbf{>0})
+          \item b-jet WP: 70 DL1r
+          \item nLeptons \& nTaus: $\bf{1e / \mu~2\tau_{\text{had}}} $
+          \item $E_{\text{T,miss}}$: no cut (to \SI{800}{GeV})
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.7\textwidth}
+        \vspace*{-0.05\textwidth}
+        \begin{itemize}
+          \footnotesize
+          \item jets:
+          \vspace*{-0.02\textwidth}
+          \begin{itemize}
+            \footnotesize
+            \item $p_T>\SI{35}{GeV}$
+            \item $|\eta|<4.5$
+            \item EMPFlow
+          \end{itemize}
+          \item electrons:
+          \vspace*{-0.02\textwidth}
+          \begin{itemize}
+            \footnotesize
+            \item $p_T>\SI{20}{GeV}$ leading \SI{27}{GeV}
+            \item $|\eta|<2.5$ not in 1.37 - 1.52
+            \item WP: LooseAndBLayerLH ; \\isolation: no requirement
+          \end{itemize}
+          \item muons:
+          \vspace*{-0.02\textwidth}
+          \begin{itemize}
+            \footnotesize
+            \item $p_T>\SI{20}{GeV}$ leading \SI{27}{GeV}
+            \item $0.01<|\eta|<2.5$
+            \item WP: Loose ; isolation: no requirement
+          \end{itemize}
+          \item taus:
+          \vspace*{-0.02\textwidth}
+          \begin{itemize}
+            \footnotesize
+            \item $p_T>\SI{20}{GeV}$ leading \SI{27}{GeV}
+            \item $|\eta|<2.5$ not in 1.37 - 1.52
+            \item WP: RNNLoose
+            \item ASG recommended OLR ($\tau_{had}$ remove jets)
+          \end{itemize}
+        \end{itemize}
+      \end{column}
+    \end{columns}
+  \end{frame}
+
+
+\begin{frame}{Features}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \resizebox{\linewidth}{!}{
+            \begin{tabular}{|l|l|}
+                \hline
+                eta\_jf              & forward jet eta                        \\ \hline
+                pt\_jf               & forward jet transverse momentum        \\ \hline
+                mass\_jf             & forward jet mass                       \\ \hline
+                phi\_jf              & forward jet phi                        \\ \hline
+                eta\_b               & b-jet eta                              \\ \hline
+                pt\_b                & b-jet transverse momentum              \\ \hline
+                phi\_b               & b-jet phi                              \\ \hline
+                mass\_b              & b-jet mass                             \\ \hline
+                m\_met               & Missing energy                         \\ \hline
+                Reco\_w\_mass\_2     & Reconstructed mass of the W case 1     \\ \hline
+                Reco\_w\_mass\_1     & Reconstructed mass of the W case 2     \\ \hline
+                fs\_had\_tau\_1\_pt  & Hadronic tau 1 pt                      \\ \hline
+                fs\_had\_tau\_1\_eta & Hadronic tau 1 eta                     \\ \hline
+                fs\_had\_tau\_2\_pt  & Hadronic tau 2 pt                      \\ \hline
+                fs\_had\_tau\_2\_eta & Hadronic tau 2 eta                     \\ \hline
+            \end{tabular}}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \resizebox{\linewidth}{!}{
+            \begin{tabular}{|l|l|}
+                 \hline
+                 deltaRTau        & Delta R of the hadronic taus          \\ \hline
+                 deltaPhiTau      & Delta phi of the hadronic taus        \\ \hline
+                 HvisMass         & mass of LorentzV sum of hadronic taus  \\ \hline
+                 HvisPt           & pt of LorentzV sum of hadronic taus      \\ \hline
+                 HvisEta          & eta of LorentzV sum of hadronic taus      \\ \hline
+                 TvisMass         & mass of reconstructed top             \\ \hline
+                 TvisPt           & pt of visible top                     \\ \hline
+                 TvisEta          & eta of visible top                    \\ \hline
+                 M\_b\_jf         & Mass of LorentV sum of b and jf       \\ \hline
+                 HT               & Sum of transverse energies            \\ \hline
+                 lep\_Top\_pt     & Light lepton pt                       \\ \hline
+                 lep\_Top\_eta    & Light lepton eta                      \\ \hline
+             \end{tabular}}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Training specifications for the lepditau channel}
+  \begin{itemize}
+      \item Training a deep neural network using tensorflow.Keras
+      \vspace{0.2cm}
+      \item Coarse optimisation using an evolutionary neural network
+      \vspace{0.2cm}
+      \item Fine optimisation doing a grid search
+      \vspace{0.2cm}
+      \item Optimised hyperparameters:
+          \begin{itemize}
+              \item Number of nodes
+              \item Number of layers
+              \item Dropout percentage
+              \item Activation function
+              \item Weight initialisation
+              \item Optimiser
+          \end{itemize}
+      \item Signal: tHq
+      \item Background: Diboson, Z+jets, ttbar, W+jets, tW, tZq
+      \item Using absolute weights
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Hyperparameters}
+    \begin{table}[]
+    \begin{tabular}{|l|l|}
+    \hline
+    Hyperparameter          &     Setting              \\ \hline
+    Model                   &     Binary          \\ \hline
+    Nodes                   &     120                  \\ \hline
+    Layers                  &     6                    \\ \hline
+    Dropout                 &     0.65                 \\ \hline
+    Batchnormalisation      &     On                   \\ \hline
+    Activation              &     elu                  \\ \hline
+    Output activation       &     sigmoid              \\ \hline
+    Batch size              &     1000                 \\ \hline
+    Optimisation            &     Adam                 \\ \hline
+    Weight Initialisation   &     Lecun Normalisation  \\ \hline
+    K-folds                 &     4                    \\ \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Results}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+          \includegraphics[width=0.82\textwidth]{response_binary}
+          \begin{itemize}
+            \item Decent separation
+            \item Stable agreement
+          \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \includegraphics[width=0.84\textwidth]{ROC_binary}
+          \includegraphics[width=0.84\textwidth]{loss_binary}
+        \end{column}
+    \end{columns}    
+\end{frame}
+
+
+
+\begin{frame}{The ROC curve}
+  \centering \includegraphics[width=0.8\textwidth]{ROC_binary}
+  \begin{itemize}
+    \item $0.84$ Area Under the Curve
+    \item Good training and test agreement
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The loss curve}
+  \centering \includegraphics[width=0.8\textwidth]{loss_binary}
+\begin{itemize}
+  \item Test loss stable
+  \item K-folds stable
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The response}
+  \centering \includegraphics[width=0.6\textwidth]{response_binary}
+  \begin{itemize}
+    \item Good separation shape
+  \end{itemize}
+\end{frame}

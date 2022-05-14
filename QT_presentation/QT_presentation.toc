@@ -1,0 +1,5 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {UKenglish}{}
+\beamer@sectionintoc {1}{Framework}{3}{0}{1}
+\beamer@sectionintoc {2}{Validation}{6}{0}{2}
+\beamer@sectionintoc {3}{Tutorial}{11}{0}{3}

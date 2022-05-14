@@ -1,0 +1,74 @@
+\begin{frame}
+    \begin{center}
+        \Huge \tHq \\ A binary classifier
+    \end{center}
+\end{frame}
+
+\begin{frame}{Hyperparameters}
+  \begin{itemize}
+    \item Optimised by small grid search
+  \end{itemize}
+    \begin{table}[]
+    \begin{tabular}{|l|l|}
+    \hline
+    Hyperparameter          &     Setting              \\ \hline
+    Model                   &     Binary          \\ \hline
+    Nodes                   &     120                  \\ \hline
+    Layers                  &     6                    \\ \hline
+    Dropout                 &     0.65                 \\ \hline
+    Batchnormalisation      &     On                   \\ \hline
+    Activation              &     elu                  \\ \hline
+    Output activation       &     sigmoid              \\ \hline
+    Batch size              &     1000                 \\ \hline
+    Optimisation            &     Adam                 \\ \hline
+    Weight Initialisation   &     Lecun Normalisation  \\ \hline
+    K-folds                 &     4                    \\ \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Results}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+          \includegraphics[width=0.82\textwidth]{response_binary}
+          \begin{itemize}
+            \item Decent separation
+            \item Stable agreement
+          \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \includegraphics[width=0.84\textwidth]{ROC_binary}
+          \includegraphics[width=0.84\textwidth]{loss_binary}
+        \end{column}
+    \end{columns}    
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge \tHq \\ A closer look
+    \end{center}
+\end{frame}
+
+\begin{frame}{The ROC curve}
+  \centering \includegraphics[width=0.8\textwidth]{ROC_binary}
+  \begin{itemize}
+    \item AUC = Are Under the Curve
+    \item Good estimator for model quality
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The loss curve}
+  \centering \includegraphics[width=0.8\textwidth]{loss_binary}
+\begin{itemize}
+  \item Should decrease
+  \item Should not diverge
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The response}
+  \centering \includegraphics[width=0.6\textwidth]{response_binary}
+  \begin{itemize}
+    \item Seeing a separation is good
+    \item Signal should be right
+  \end{itemize}
+\end{frame}

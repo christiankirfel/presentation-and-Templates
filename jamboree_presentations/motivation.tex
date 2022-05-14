@@ -1,0 +1,51 @@
+\begin{frame}{Initial problems}
+    \begin{block}{Obstacles of optimisation processes}
+        \begin{itemize}
+            \item Grid searches are both tedious and ressource intensive
+            \item Knowledge gained in one problem is rarely universal
+            \item Experienced users can develop a bias towards certain hyperparamters
+        \end{itemize}
+    \end{block}
+    \begin{block}{Making machine learning more accesible to students}
+        \begin{itemize}
+            \item Physics students need increasingly high programming skills
+            \item Most students actively search this challenge but appreciate the rewarded of early results
+            \item Desirable to create a framework that is easy to use and allows to face some challenges later on
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Goals}
+    \begin{block}{Network optimisation}
+        \begin{itemize}
+            \item Create an algorithm more efficient than a grid search
+            \item The algorithm should be unbiased and avoiding local minima
+        \end{itemize}
+    \end{block}
+    \begin{block}{Accesibility}
+        \begin{itemize}
+            \item A new user should have easy access
+            \item The challenges for a new user should be small enough to allow a feeling of achievment
+        \end{itemize}
+    \end{block}
+    \begin{block}{BAF compatability}
+        \begin{itemize}
+            \item The algorithm should utilize the BAF worker node structure
+            \item Ideally it should be efficient enough to create satisfying results on CPUs
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Evolutionary optimisation of neural networks}
+    \begin{itemize}
+        \item Combination of a grid searches with a survival of the fittest setup
+        \vspace{0.2cm}
+        \item Start with a number of random hyperparamters
+        \vspace{0.2cm}
+        \item Evaluate the set of hyperparameters
+        \vspace{0.2cm}
+        \item Create a a new set of networks based on the previous best
+        \vspace{0.2cm}
+        \item Add recombination and variation to avoid local minima and bias
+    \end{itemize}
+\end{frame}
